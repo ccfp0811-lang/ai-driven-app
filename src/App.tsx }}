@@ -1,0 +1,100 @@
+import React from 'react';
+
+// 簡易的なアイコンコンポーネント
+const CheckCircleIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+);
+
+function App() {
+  return (
+    <div className="bg-gray-50 min-h-screen font-sans text-gray-800">
+      <main className="container mx-auto px-6 py-12 max-w-3xl">
+
+        {/* タイトル */}
+        <header className="text-center mb-12">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+            「頑張っているのに、<br className="sm:hidden" />なぜか報われないあなたへ」
+          </h1>
+        </header>
+
+        {/* 共感パート */}
+        <section className="bg-white p-8 rounded-lg shadow-md mb-12 text-center">
+          <p className="text-lg leading-relaxed mb-4">毎日ちゃんと働いている。</p>
+          <p className="text-lg leading-relaxed mb-4">手も抜いていないし、周りにも気を遣っている。</p>
+          <p className="text-lg leading-relaxed mb-4">それなのに、なぜか評価されない。</p>
+          <p className="text-lg leading-relaxed mt-6">将来のことを考えると、<br />少しだけ不安になる夜がある。</p>
+          <p className="mt-8 text-xl font-semibold text-indigo-600 bg-indigo-50 p-4 rounded-md">
+            「このままでいいのかな」<br />
+            そんな気持ちに、心当たりはありませんか？
+          </p>
+        </section>
+
+        {/* 問題提起 */}
+        <section className="text-center mb-12">
+          <h2 className="text-2xl font-bold mb-4">実は、多くの人が<br/>“努力の方向”を間違えたまま<br/>頑張り続けています。</h2>
+          <div className="bg-red-50 border-l-4 border-red-400 text-red-700 p-6 rounded-md shadow-sm mt-6 text-left max-w-md mx-auto">
+            <p className="mb-2">・頑張ればいつか報われる</p>
+            <p className="mb-2">・我慢していれば安定する</p>
+            <p className="mb-2">・今は耐える時期</p>
+          </div>
+          <p className="mt-6 text-lg">
+            そう信じて動けなくなっている人ほど、<br />チャンスから遠ざかってしまうのが現実です。
+          </p>
+        </section>
+
+        {/* 解決策の提示 */}
+        <section className="bg-white p-8 rounded-lg shadow-md mb-12">
+          <h2 className="text-2xl font-bold text-center mb-6">大切なのは、才能や根性ではありません。<br/>必要なのは <span className="text-indigo-600">「正しい選択肢を知ること」</span> です。</h2>
+          <p className="text-center text-lg mb-6">実際に、</p>
+          <ul className="space-y-4 max-w-md mx-auto">
+            <li className="flex items-start"><CheckCircleIcon /><span>今の仕事を続けながら</span></li>
+            <li className="flex items-start"><CheckCircleIcon /><span>無理なくスキルを身につけ</span></li>
+            <li className="flex items-start"><CheckCircleIcon /><span>収入と選択肢を増やしている人たちがいます。</span></li>
+          </ul>
+          <p className="mt-6 text-center text-lg font-medium">
+            彼女たちがやっていたことは、<br/>特別なことではありません。
+          </p>
+        </section>
+
+        {/* ベネフィット（未来像） */}
+        <section className="text-center mb-12">
+          <h2 className="text-2xl font-bold mb-6">もしあなたが...</h2>
+          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-md shadow-sm text-left max-w-md mx-auto space-y-3 text-yellow-800">
+            <p>・将来に対する不安が減り</p>
+            <p>・「自分で選べている」という感覚を持ち</p>
+            <p>・お金も時間も少し余裕ができたら</p>
+          </div>
+          <p className="mt-6 text-xl font-semibold">
+            毎日の景色は、確実に変わります。
+          </p>
+          <p className="mt-8 text-2xl font-bold text-indigo-600">
+            「私にもできた」
+          </p>
+          <p className="mt-2 text-lg">
+            そう思える選択肢は、ちゃんと存在します。
+          </p>
+        </section>
+
+        {/* 行動喚起（CTA） */}
+        <section className="bg-indigo-700 text-white p-8 rounded-lg shadow-xl text-center">
+          <h2 className="text-2xl font-bold mb-4">まずは、知ることから始めてください。</h2>
+          <p className="text-lg mb-6">今のあなたに合った選択肢を、無料で整理できます。</p>
+          <div className="text-4xl mb-4">👇</div>
+          <a
+            href="#" // ここにLINEのリンクを設定
+            className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold text-xl py-4 px-10 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            LINEで無料診断を受けてみる
+          </a>
+          <p className="mt-4 text-indigo-200 text-sm">（無理な勧誘は一切ありません）</p>
+        </section>
+
+      </main>
+    </div>
+  );
+}
+
+export default App;
+ }}
